@@ -11,8 +11,8 @@ nota2 = float(input("Segunda nota: "))
 media = (nota1+nota2)/2
 
 if (media < 5):
-    print("Infelizmente sua nota foi de {:f} pontos, você ficou abaixo da média e foi reprovado, sinto muito!".format(media))
+    print("Infelizmente sua nota foi de {:.f} pontos, você ficou abaixo da média e foi reprovado, sinto muito!".format(media))
 elif (media >5 and media <= 6.9):
-    print("Infelizmente sua nota foi de {:f} pontos, você ficou abaixo da média, mas ainda pode tentar a recuperação, boa sorte!".format(media))
+    print("Infelizmente sua nota foi de {:.f} pontos, você ficou abaixo da média, mas ainda pode tentar a recuperação, boa sorte!".format(media))
 else:
-    print("Meus parabéns, sua nota foi de {:f} pontos e você foi aprovado/a")
+    print("Meus parabéns, sua nota foi de {:.f} pontos e você foi aprovado/a")
