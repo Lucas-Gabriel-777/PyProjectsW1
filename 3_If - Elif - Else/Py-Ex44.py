@@ -29,4 +29,7 @@ elif metodo == 3:
         print("Não há descontos para pagamentos parcelados em até 2X, o valor final  da compra é o valor inicial de {:.2f}R$".format(preco))
     else:
         preco2 = preco + (preco*0.20)
+
         print("Para pagamentos parcelados em mais de 2X no cartão, a compra recebe um acréscimo de 20%, sendo assim, a compra de {:.2f}R$ passa a custar {:.2f}R$".format(preco,preco2))
+else:
+    print("Opção inválida, o valor da compra é de {:.2f} R$".format(preco))
