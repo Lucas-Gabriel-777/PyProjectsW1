@@ -10,10 +10,10 @@ from random import randint
 mc = randint(0,5)
 
 print("Eu escolhi um número entre 0 e 5, você consegue adivinhar qual é?")
-hc = int(input("Paplite: "))
+hc = int(input("Palpite: "))
 
 while ( hc<0 or hc>5):
-    hc = int(input("Opção inválida, digite um número entre 0 e 5. \nPaplite: "))
+    hc = int(input("Opção inválida, digite um número entre 0 e 5. \nPalpite: "))
 if (hc == mc):
     print("Parabéns, eu escolhi o número {} e você descobriu!".format(mc))
 else:
