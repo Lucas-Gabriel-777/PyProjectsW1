@@ -9,9 +9,8 @@ while True:
     num = int(input("\nVocê deseja ver a tabuada de qual número?  "))
     if num <= 0:
         break
-    print("_"*20)
-    print(" Tabuada do número {}".format(num))
-    print("_"*20)
+    print("-"*25,"\n  Tabuada do número {}".format(num))
+    print("-"*25)
 
     while c <= 10:
         mult = num * c
