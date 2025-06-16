@@ -9,30 +9,22 @@ nota50 = nota20 = nota10 = nota1 = 0
 valor = int(input("Qual valor você deseja sacar? "))
 valor1 = valor
 
-while valor > 0:
-    if valor >= 50:
-        while valor >=50:
-            nota50 +=1
-            valor -= 50
-    elif valor >= 20:
-        while valor >=20:
-            nota20 +=1
-            valor -= 20
-    elif valor >= 10:
-        while valor >=10:
-            nota10 +=1
-            valor -= 10
-    elif valor >= 1:
-        while valor >=1:
-            nota1 +=1
-            valor -= 1
-
-print(f"\nVocê optou por sacar {valor1} R$, isso te deixa com")
-if nota50 > 0:
-    print(f"\n{nota50} nota(s) de 50", end=" ")
-if nota20 > 0:
-    print(f"\n{nota20} nota(s) de 20", end=" ")
-if nota10 > 0:
-    print(f"\n{nota10} nota(s) de 10", end=" ")
-if nota1 > 0:
-    print(f"\n{nota1} nota(s) de 1.")
+nota = 50
+notas = 0
+print(f"Voce optou por sacar {valor} R$, e isso te deixa com")
+while True:
+    if valor1 >= nota:
+        valor1 -= nota
+        notas += 1
+    else:
+        if notas > 0:
+            print(f"{notas} nota(s) de {nota}")
+        if nota == 50:
+            nota = 20
+        elif nota == 20:
+            nota = 10
+        elif nota == 10:
+            nota = 1
+        notas = 0
+        if valor == 0:
+            break
