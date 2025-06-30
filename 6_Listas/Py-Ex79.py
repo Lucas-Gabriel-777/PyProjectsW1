@@ -1,5 +1,5 @@
 #Autor: Lucas Gabriel dos Santos Lima
-#Data: 21-06-2025
+#Data: 30-06-2025
 #Objetivo: Crie um programa onde o usuário possa digitar vários valores numéricos e cadastre-os em uma lista. 
 # Caso o número já exista lá dentro, ele não será adicionado. 
 # No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
